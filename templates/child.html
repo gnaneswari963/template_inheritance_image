@@ -1,0 +1,14 @@
+
+{% extends 'parent.html' %}
+{% load static %}
+
+{% block title %}
+    <title>child</title>
+{% endblock %}
+
+{% block body_block %}
+    <h1>child html page</h1>
+    <img src="{% static 'images/flower2.jpg' %}" alt="image not found" width="300px" height="300px">
+    <img src="{% static 'images/flower3.jpg' %}" alt="image not found" width="300px" height="300px">
+{% endblock %}
+
